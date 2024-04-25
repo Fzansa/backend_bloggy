@@ -1,0 +1,26 @@
+# Dependency directories
+/node_modules
+
+# Environment variables file
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Yarn integrity file
+.yarn-integrity
+
+# OS generated files
+.DS_Store
+Thumbs.db
