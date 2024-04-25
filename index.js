@@ -27,7 +27,10 @@ const storage = multer.diskStorage({
 });
 
 // connect mongodb 
-mongoose.connect('mongodb://localhost:27017/bloggy').then(() => {
+mongoose.connect('mongodb+srv://faizan:faizan@cluster0.igvpcm2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
     console.log("DB connected SuccessFuly");
 }).catch(err => {
     console.log(err.message);
